@@ -1,4 +1,4 @@
-package main.java.collections_list;
+package main.java.collections_list.queue;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -19,6 +19,6 @@ public class QueueTest {
         breadQueue.remove();
 
         System.out.println(breadQueue);
-        
+
     }
 }
