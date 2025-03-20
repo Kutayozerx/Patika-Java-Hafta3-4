@@ -20,10 +20,21 @@ public class CloseNumbers {
         closeNumbers.add(250);
         closeNumbers.add(175);
 
+        int minDiff = Integer.MAX_VALUE;
+        int closest1 = 0, closest2 = 0;
 
-
+        for (int i = 0; i < closeNumbers.size(); i++) {
+            for (int j = i + 1; j < closeNumbers.size(); j++) {
+                int diff = Math.abs(closeNumbers.get(i) - closeNumbers.get(j));
+                if (diff < minDiff) {
+                    minDiff = diff;
+                    closest1 = closeNumbers.get(i);
+                    closest2 = closeNumbers.get(j);
+                }
+            }
+    }
+        System.out.println("Liste: " + closeNumbers);
+        System.out.println("En yakın iki eleman: " + closest1 + " ve " + closest2);
 
     }
-
-
 }
