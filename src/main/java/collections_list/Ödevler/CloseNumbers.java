@@ -1,4 +1,4 @@
-package main.java.collections_list.set;
+package main.java.collections_list.Ödevler;
 
 import java.util.ArrayList;
 import java.util.List;
